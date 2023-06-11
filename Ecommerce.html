@@ -2,18 +2,73 @@
     <html  lang =" es " >
     
     <cabeza>
-        <juego de caracteres meta  =" UTF-8 " >
-        <meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
-        <meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
-    
-        <enlace  rel =" icono de acceso directo " href =" ./images/logo.png " type =" imagen/svg+xml " >
-    
+        <juego de caracteres meta  =" UTF-8 " > <!--Se introduce al codigo un conjunto de caracteres para que puedan ser usados-->
+        <meta  http-equiv =" X-UA-Compatible " content =" IE=edge " > <!--Se configura la vista de compatibilidad-->
+        <meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " > <!--Se inicializa el viewport, para acomodar la visualizacion estructural-->
+        <enlace  rel =" icono de acceso directo " href =" ./images/logo.png " type =" imagen/svg+xml " > <!--Se inserta el acceso directo y se referencia el enlace-->
+        
         <!-- importa el archivo CSS en HTML -->
         <enlace  rel =" hoja de estilo " href =" estilo.css " >
-    
+        
         <!--Enlace de fuente de icono-->
-    
         <enlace  rel =" hoja de estilo " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css " >
-    
         <title > Diseno Web DeKodex-Shop Web Completosdsd </title >
     </cabeza >
+    <body>
+
+        <!--inicio del header -->
+        <section id="header" class="header">
+            <a href="#" class="logo"><i class="fas fa-shop"></i> DeKodex-Shop</a>
+    
+            <nav class="navbar"> <!--Aca se realiza la construccion de la barra navegadora-->
+                <!--Se introducen las opciones de la barra-->
+                <a href="#home">Home</a>
+                <a href="#about">Acerca</a>
+                <a href="#contact">Contacto</a>
+                <a href="#category">Categoria</a>
+                <a href="#shop">Tienda</a>
+            </nav>
+            <div class="icons"> <!--Se hace la division para llamar la libreria de los iconos-->
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+    
+            </div>
+    
+        </section>
+        <!-- Aqui finaliza la seccion del header -->
+    
+        <!-- Aqui inicia la seccion home -->
+        <section class="home" id="home">
+            <!-- 1-->
+            <div class="slide active"
+                style="background: url(./images/herobg5.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <span>Pick the perfect pair</span>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae repellendus</h3>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <!-- 2-->
+            <div class="slide"
+                style="background: url(./images/herobg2.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <span>Exclusive Sport Shoes</span>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <!-- 3-->
+            <div class="slide"
+                style="background: url(./images/herobg3.jpg) no-repeat; background-size: cover; background-position: center;">
+                <div class="content">
+                    <span>Smart & Sporty</span>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+    
+            <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+            <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    
+        </section>
