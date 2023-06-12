@@ -12,13 +12,13 @@
         
         <!--Enlace de fuente de icono-->
         <enlace  rel =" hoja de estilo " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css " >
-        <title > Diseno Web DeKodex-Shop Web Completosdsd </title >
+        <title > Diseno Web ZapaTiendas-Sepulveda Completosdsd </title >
     </cabeza >
     <body>
 
         <!--inicio del header -->
         <section id="header" class="header">
-            <a href="#" class="logo"><i class="fas fa-shop"></i> DeKodex-Shop</a>
+            <a href="#" class="logo"><i class="fas fa-shop"></i> ZapaTiendas-Sepulveda</a>
     
             <nav class="navbar"> <!--Aca se realiza la construccion de la barra navegadora-->
                 <!--Se introducen las opciones de la barra-->
@@ -40,35 +40,213 @@
     
         <!-- Aqui inicia la seccion home -->
         <section class="home" id="home">
-            <!-- 1-->
-            <div class="slide active"
+            <!--1 Se introduce el boton deslizable, se le da su opcion/mensaje, y se configura su fondo-->
+            <div class="slide active" 
                 style="background: url(./images/herobg5.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="content">
-                    <span>Pick the perfect pair</span>
+                    <span>Elige el par perfecto</span>
                     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae repellendus</h3>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">leer mas</a>
                 </div>
             </div>
-            <!-- 2-->
+            <!--2 se configura opcion/mensaje numero 2 del boton deslizable, y se configura su fondo-->
             <div class="slide"
                 style="background: url(./images/herobg2.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="content">
-                    <span>Exclusive Sport Shoes</span>
+                    <span>Zapatos deportivos exclusivos</span>
                     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">leer mas</a>
                 </div>
             </div>
-            <!-- 3-->
+            <!--3 se configura opcion/mensaje numero 3 del boton deslizable, y se configura su fondo-->
             <div class="slide"
                 style="background: url(./images/herobg3.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="content">
-                    <span>Smart & Sporty</span>
+                    <span>Diseño inteligente y deportivo</span>
                     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">leer mas</a>
                 </div>
             </div>
-    
+            <!--Ahora no solo es deslizable sino que reacciona al click-->
             <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
             <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
     
         </section>
+         <!--Se inicia la seccion de categoria-->
+    <section class="category" id="category">
+        <h1 class="heading">Producto<span> Promocion</span></h1>
+        <div class="box-container"> <!--division para crear un contenedor-->
+            <a href="#" class="box"> <!--caja por cada uno de los productos-->
+                <img src="./images/zapas1.jpg"> <!--Se hace llamado de la carpeta donde se guardan las imagenes previamente descargadas-->
+                <h3>Producto 1</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/zapas2.jpg">
+                <h3>Producto 2</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/zapas3.jpg">
+                <h3>Producto 3</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/zapas4.jpg">
+                <h3>Producto 4</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/zapas5.jpg">
+                <h3>Producto 5</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/zapas6.jpg">
+                <h3>Producto 6</h3>
+            </a>
+        </div>
+    </section>
+    <!-- Aqui finaliza la seccion de Categoria-->
+
+    <!--Aqui inicia la seccion de promocion-->
+    <section class="promotion" id="promotion">
+        <div class="box-container">
+            <div class="collection-card" style="background-image:url(./images/coleccion1.jpg)">
+                <h1>Coleccion hugoBoss</h1>
+                <a href="#" class="btn">Explora Mas<i class="fas fa-arrow-right"></i></a> <!--Se crean botones con link a las colecciones-->
+            </div>
+            <div class="collection-card" style="background-image:url(./images/coleccion2.jpg)">
+                <h1>Coleccion hugoBoss</h1>
+                <a href="#" class="btn">Explora Mas<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="collection-card" style="background-image:url(./images/coleccion3.jpg)">
+                <h1>Coleccion hugoBoss</h1>
+                <a href="#" class="btn">Explora Mas<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Aqui finaliza la seccion de promocion -->
+ <!-- Aqui inicia la seccion tienda-->
+ <section class="shop" id="shop"> <!--Se identifica como shop, y se ingresa el mensaje y un contenedor-->
+    <h1 class="heading">Nuestra<span> Tienda</span></h1> 
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img src="./images/1.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a> <!--Se introducen iconos-->
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Deportivos casuales</h3>
+                <div class="price">$40<span> $150.99</span></div> <!--Se ingresa el precio y el boton opcional de añadir al carrito-->
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/2.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Deportivos en bota</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/3.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Running adidas</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/4.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Running puma</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/zapas1.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Running Nike casuales</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/zapas4.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Air jordan azules</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/zapas2.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Air force 1</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="./images/zapas3.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Air max 720</h3>
+                <div class="price">$40<span> $150.99</span></div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Aqui finaliza la seccion de tienda-->
