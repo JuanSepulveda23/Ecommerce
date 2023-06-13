@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda Virtual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Tienda Virtual</h1>
+  <div id="products">
+    <h2>Productos</h2>
+    <div class="product">
+        <img src="./images/zapas1.jpg"> <!--Se hace llamado de la carpeta donde se guardan las imagenes previamente descargadas-->
+      <span>Producto 1</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 5', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/zapas2.jpg"> <!--Se hace llamado de la carpeta donde se guardan las imagenes previamente descargadas-->
+      <span>Producto 2</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 6', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/zapas3.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 7', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/zapas4.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 8', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/1.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 1', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/2.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 2', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/3.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 3', 40)">
+    </div>
+    <div class="product">
+        <img src="./images/4.jpg">
+      <span>Producto 3</span>
+      <span>$40</span>
+      <button onclick="addToCart('Producto 4', 40)">
+    </div>
+</div>
+  <div id="cart">
+    <h2>Carrito de compras</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -30,8 +30,14 @@
             <div class="icons"> <!--Se hace la division para llamar la libreria de los iconos-->
                 <div id="menu-btn" class="fas fa-bars"></div>
                 <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
-    
+                <div id="cart"> 
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                  </div>
+                  <script src="script.js"></script>
+                <link rel="stylesheet" type="text/css" href="style.css">
+
             </div>
     
         </section>
@@ -138,7 +144,8 @@
             <div class="content">
                 <h3>Deportivos casuales</h3>
                 <div class="price">$40<span> $87.99</span></div> <!--Se ingresa el precio y el boton opcional de añadir al carrito-->
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 1', 40)"> Añadir al carrito</a>
+                
             </div>
         </div>
         <div class="box">
@@ -153,7 +160,7 @@
             <div class="content">
                 <h3>Deportivos en bota</h3>
                 <div class="price">$40<span> $120.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 2', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -168,7 +175,7 @@
             <div class="content">
                 <h3>Running adidas</h3>
                 <div class="price">$40<span> $110.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 3', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -183,7 +190,7 @@
             <div class="content">
                 <h3>Running puma</h3>
                 <div class="price">$40<span> $137.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 4', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -198,7 +205,7 @@
             <div class="content">
                 <h3>Running Nike casuales</h3>
                 <div class="price">$40<span> $100.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 5', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -213,7 +220,7 @@
             <div class="content">
                 <h3>Air jordan azules</h3>
                 <div class="price">$40<span> $150.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 8', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -228,7 +235,7 @@
             <div class="content">
                 <h3>Air force 1</h3>
                 <div class="price">$40<span> $196.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 6', 40)"> Añadir al carrito</a>
             </div>
         </div>
         <div class="box">
@@ -243,7 +250,7 @@
             <div class="content">
                 <h3>Air max 720</h3>
                 <div class="price">$40<span> $270.99</span></div>
-                <a href="#" class="btn">Añadir al carrito</a>
+                <a href="#" class="btn"><button onclick="addToCart('Producto 7', 40)"> Añadir al carrito</a>
             </div>
         </div>
     </div>
