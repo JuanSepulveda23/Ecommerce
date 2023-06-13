@@ -1,0 +1,196 @@
+/* Establecer estilos generales para todos los elementos */
+*{
+    font-family: 'Roboto',sans-serif; /* Se establece la fuente de la letra */
+    margin: 0; /* Margen externo */
+    padding: 0; /* Relleno interno */
+    text-decoration: none; /* Quitar decoración de texto */
+    outline: none; /* Quitar contorno al hacer click */
+    border: none; /* Quitar bordes */
+    text-transform: capitalize; /* Capitalizar texto */
+    transition: all 0.2s linear; /* Transición suave en todos los estilos */
+}
+/* Estilos para el elemento <html> */
+html{
+    font-size: 62.5%; /* Establecer tamaño de fuente base al 62.5% */
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    scroll-behavior: smooth; /* Comportamiento de desplazamiento suave */
+    scroll-padding-top: 7rem; /* Espacio superior para compensar el desplazamiento */
+}
+/* Estilos para la barra de desplazamiento en WebKit */
+html::-webkit-scrollbar-track{
+    background:transparent; /* Fondo transparente */
+}
+html::-webkit-scrollbar{
+    width:1rem; /* Ancho de la barra de desplazamiento */
+
+}
+html::-webkit-scrollbar-thumb{
+    background:#474646; /* Color del pulgar de la barra de desplazamiento */
+}
+/* Estilos para las secciones */
+section{
+    padding:3rem 9%; /* Relleno interno en las secciones */
+}
+/* Estilos para los encabezados */
+.heading{
+    text-align:center; /* Alinear al centro */
+    color: #222; /* Color de texto */
+    margin-bottom: 3rem; /* Margen inferior */
+    font-size: 4rem; /* Tamaño de fuente */
+}
+
+/* keyframe */
+@keyframes fadeIn {
+    0%{
+        opacity: 0; /* Opacidad inicial */
+        transform: translateY(-4rem) scale(0.4); /* Traslación y escala inicial */
+    }
+}
+
+
+/* Estilos para la sección del encabezado */
+.header{
+    position:sticky; /* Posicionamiento fijo en la parte superior */
+    top: 0; /* Distancia desde la parte superior */
+    left: 0; /* Distancia desde la izquierda */
+    right: 0; /* Distancia desde la derecha */
+    z-index: 1000; /* Índice z para superposición */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra del encabezado */
+    background: #fff; /* Color de fondo */
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espacio uniforme entre elementos */
+    padding: 1.5rem 9%; /* Relleno interno en el encabezado */
+}
+/* Estilos para el logo en el encabezado */
+.header .logo{
+    font-size: 2.5rem;
+    color:#222;
+    font-weight: bolder;
+}
+.header .logo i{
+    color: #e60000; /* Color de texto del icono */
+}
+/* Estilos para los enlaces de navegación en el encabezado */
+.header .navbar a{
+    margin: 0 1.5rem 0 0; /* Margen entre enlaces */
+    font-size: 1.7rem;
+    color: #222;
+    
+}
+.header .navbar a:hover{
+    color: #e60000; /* Color de texto al pasar el mouse */
+    transform: scale(1.5); /* Escala al pasar el mouse */
+}
+/* Estilos para los iconos en el encabezado */
+.header .icons div,
+.header .icons a{
+    height: 4.5rem; /* Altura */
+    width: 4.5rem; /* Ancho */
+    line-height: 4.5rem; /* Altura de la linea */
+    border-radius:.5rem; /* radio del borde */
+    background:#eee; /* color del fondo*/
+    font-size: 1.7rem;
+    color: #222;
+    text-align: center; /* Alinear al centro */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    background: #e60000; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Color de texto al pasar el mouse */
+}
+.header #menu-btn{
+    display: none; /* Ocultar botón de menú */
+}
+
+/* Estilos para la sección "home" */
+.home{
+    position: relative;
+    padding: 0;
+}
+.home .slide{
+    padding:3rem; /* Relleno interno en las diapositivas */
+    display: flex; /* Mostrar como flexbox */
+    min-height: 82vh; /* Altura mínima de la diapositiva */
+    display: none; /* Ocultar diapositivas por defecto */
+}
+.home .slide.active {
+    display: flex; /* Mostrar diapositivas activas */
+} 
+
+.home .slide .content{
+    margin: 60;
+    text-align: left;
+    padding-top: 18rem; /* Relleno superior */
+}
+
+.home .slide .content span{
+    color: #fff;
+    display: block; /* Mostrar como bloque */
+    font-size: 5rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7); /* Sombra de texto */
+    animation: fadeIn .2s linear backwards; /* Animación de aparición */
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.home .slide .content span:hover{
+    color:#e60000; /* Color de texto al pasar el mouse */
+}
+.home .slide .content h3{
+    font-size:2rem;
+    color: #fff;
+    text-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    animation: fadeIn .2s linear backwards .4s; /* Animación de aparición */
+}
+
+.home .slide .content .btn{
+    animation: fadeIn .2s linear backwards .6s; /* Animación de aparición */
+}
+
+.home #next-slide,
+.home #prev-slide{
+    height:4rem;
+    width:4rem;
+    line-height: 3.8rem;
+    font-size: 2.5rem;
+    color:#222;
+    border:0.1rem solid #222;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    position: absolute; /* posicionamiento absoluto*/
+    bottom: 2rem;
+    right: 2rem;
+    text-align: center;
+}
+.home #next-slide:hover,
+.home #prev-slide:hover{
+    background: #e60000; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Color de texto al pasar el mouse */
+
+}
+.home #prev-slide{
+    right: 8rem; /* Distancia desde la derecha */
+}
+
+/* Estilos para los botones */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.7);
+    cursor: pointer;
+    border: red solid 1px;
+}
+.btn:hover{
+    letter-spacing: .1rem; /* Espaciado entre letras al pasar el mouse */
+    background:#e60000; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Color de texto al pasar el mouse */
+}
+
+span{
+    color: #e60000; /* Color de texto */
+}
